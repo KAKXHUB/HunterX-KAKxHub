@@ -59,9 +59,9 @@ Tabs.Main:AddButton({
                 }}
             }}
         });
-    });
-    end]]
+    });]]
     print(Input.Value)
+    end
 })
 
 
