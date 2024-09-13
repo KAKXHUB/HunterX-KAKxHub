@@ -42,7 +42,7 @@ Tabs.Main:AddButton({
     Description = "Very important button",
     Callback = function()
     --[[if not Input.Value then return end;
-    if not string.find(Input.Value, "https://discord.com/api/webhooks") then return end;
+    if not string.find(Input.Value, "https://discord.com/api/webhooks") then return end;]]
     local My_Request = (syn and syn.request) or (http and http.request) or request;
     My_Request({
         Url = Input.Value;
@@ -59,10 +59,11 @@ Tabs.Main:AddButton({
                 }}
             }}
         });
-    });]]
-    print(Input.Value)
+    });
     end
 })
+
+
 
 
 
