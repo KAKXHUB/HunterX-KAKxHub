@@ -41,7 +41,7 @@ Tabs.Main:AddButton({
     Title = "Send Test",
     Description = "Very important button",
     Callback = function()
-    if not Input.Value then return end;
+    --[[if not Input.Value then return end;
     if not string.find(Input.Value, "https://discord.com/api/webhooks") then return end;
     local My_Request = (syn and syn.request) or (http and http.request) or request;
     My_Request({
@@ -60,8 +60,10 @@ Tabs.Main:AddButton({
             }}
         });
     });
-    end
+    end]]
+    print(Input.Value)
 })
+
 
 
 local TColorpicker = Tabs.Main:AddColorpicker("TransparencyColorpicker", {
