@@ -9,7 +9,7 @@ local YourWebhookUrl = "https://discord.com/api/webhooks/921002942620893184/yrit
 local StopHopServerWhenFoundSelectDFBox = true
 local NotSameServerListMax = 5
 
-
+local Cache = { DevConfig = {} };
 Cache.DevConfig["ListOfRareDveilFruit"] = game:GetService("HttpService"):JSONDecode(game:HttpGet("https://raw.githubusercontent.com/KangKung02/just-bin/main/OPL_LF.json"));
 Cache.DevConfig["ListOfBox"] = {"Common Box", "Uncommon Box", "Rare Box", "Ultra Rare Box"};
 Cache.DevConfig["ListOfRareBox"] = {"Rare Box", "Ultra Rare Box"};
